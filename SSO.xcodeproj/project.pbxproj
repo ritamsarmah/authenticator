@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204757D5214F2686004E401E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204757D2214F2685004E401E /* User.swift */; };
+		204757D6214F2686004E401E /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204757D3214F2685004E401E /* Authenticator.swift */; };
+		204757D7214F2686004E401E /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204757D4214F2685004E401E /* LoginButton.swift */; };
 		20A2D25F214ED5BD00719082 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2D25E214ED5BD00719082 /* Keys.swift */; };
-		20A2D263214EDD5100719082 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2D260214EDD5100719082 /* Authenticator.swift */; };
-		20A2D264214EDD5100719082 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2D261214EDD5100719082 /* LoginButton.swift */; };
-		20A2D265214EDD5100719082 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2D262214EDD5100719082 /* User.swift */; };
 		944B37201473088CE944EAD7 /* Pods_SSO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B4680F955299100EDB8059 /* Pods_SSO.framework */; };
 		D06F5914214203B0008AAE50 /* bubbles.mov in Resources */ = {isa = PBXBuildFile; fileRef = D06F5913214203B0008AAE50 /* bubbles.mov */; };
 		D0D05ADF213602B800618E07 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D05ADE213602B800618E07 /* HomeViewController.swift */; };
@@ -27,10 +27,10 @@
 
 /* Begin PBXFileReference section */
 		1FBBFBF60EE74534BE05DE70 /* Pods-SSO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSO/Pods-SSO.debug.xcconfig"; sourceTree = "<group>"; };
+		204757D2214F2685004E401E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		204757D3214F2685004E401E /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		204757D4214F2685004E401E /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		20A2D25E214ED5BD00719082 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
-		20A2D260214EDD5100719082 /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = SSO/Authenticator/Authenticator.swift; sourceTree = SOURCE_ROOT; };
-		20A2D261214EDD5100719082 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginButton.swift; path = SSO/Authenticator/LoginButton.swift; sourceTree = SOURCE_ROOT; };
-		20A2D262214EDD5100719082 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = SSO/Authenticator/User.swift; sourceTree = SOURCE_ROOT; };
 		4B1BA9ED0F9B7335002E754B /* Pods-SSO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSO.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSO/Pods-SSO.release.xcconfig"; sourceTree = "<group>"; };
 		65B4680F955299100EDB8059 /* Pods_SSO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06F5913214203B0008AAE50 /* bubbles.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = bubbles.mov; sourceTree = "<group>"; };
@@ -60,6 +60,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		204757D1214F2685004E401E /* Authenticator */ = {
+			isa = PBXGroup;
+			children = (
+				204757D2214F2685004E401E /* User.swift */,
+				204757D3214F2685004E401E /* Authenticator.swift */,
+				204757D4214F2685004E401E /* LoginButton.swift */,
+			);
+			path = Authenticator;
+			sourceTree = "<group>";
+		};
 		5031F0E5C56831D41F1B2D47 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,17 +77,6 @@
 				4B1BA9ED0F9B7335002E754B /* Pods-SSO.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		D04B6B87214882D600A9F14A /* Authenticator */ = {
-			isa = PBXGroup;
-			children = (
-				20A2D260214EDD5100719082 /* Authenticator.swift */,
-				20A2D261214EDD5100719082 /* LoginButton.swift */,
-				20A2D262214EDD5100719082 /* User.swift */,
-			);
-			name = Authenticator;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		D0D05AE22136F97900618E07 /* Extensions */ = {
@@ -142,7 +141,7 @@
 		D0FB3AB72134B355006EDBC4 /* SSO */ = {
 			isa = PBXGroup;
 			children = (
-				D04B6B87214882D600A9F14A /* Authenticator */,
+				204757D1214F2685004E401E /* Authenticator */,
 				D0D05AEB2137022F00618E07 /* Controllers */,
 				D0D05AEA2137022500618E07 /* Services */,
 				D0D05AE92137021400618E07 /* Supporting Files */,
@@ -318,6 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204757D5214F2686004E401E /* User.swift in Sources */,
+				204757D6214F2686004E401E /* Authenticator.swift in Sources */,
 				20A2D25F214ED5BD00719082 /* Keys.swift in Sources */,
 				D0D05AE82137006300618E07 /* Alert.swift in Sources */,
 				D0FB3ABB2134B355006EDBC4 /* LoginViewController.swift in Sources */,
@@ -325,11 +326,9 @@
 				D0FB3ACF2134B4E9006EDBC4 /* UIColor+Formats.swift in Sources */,
 				D0FB3AB92134B355006EDBC4 /* AppDelegate.swift in Sources */,
 				D0FB3ACB2134B3B9006EDBC4 /* Constants.swift in Sources */,
-				20A2D265214EDD5100719082 /* User.swift in Sources */,
+				204757D7214F2686004E401E /* LoginButton.swift in Sources */,
 				D0D05ADF213602B800618E07 /* HomeViewController.swift in Sources */,
-				20A2D264214EDD5100719082 /* LoginButton.swift in Sources */,
 				D0D05AF0213712FA00618E07 /* Presenter.swift in Sources */,
-				20A2D263214EDD5100719082 /* Authenticator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
