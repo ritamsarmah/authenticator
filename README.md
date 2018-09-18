@@ -128,9 +128,8 @@ Authenticator is a robust and easy-to-use iOS framework for implementing social 
 
     - Using a custom button
         ```swift
-        var myButton: MyCustomButton!
+        var myButton = UIButton()
 
-        myButton.addTarget()
         myButton.addTarget(self, action: #selector(loginWithFacebook), for: .touchUpInside)
 
         @objc func loginWithFacebook() {
